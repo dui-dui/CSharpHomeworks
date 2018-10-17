@@ -17,9 +17,13 @@ namespace program2
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Form1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
             if (graphics == null) graphics = this.CreateGraphics();
             drawCayleyTree(10, 300, 450, 100, -Math.PI / 2);
         }
@@ -53,26 +57,5 @@ namespace program2
             graphics.DrawLine(Pens.Green, (int)x0, (int)y0, (int)x1, (int)y1);
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-        private void textBox4_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox5_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }
